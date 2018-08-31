@@ -15,7 +15,8 @@ namespace _2018_10_01_b
             {
                 result += MaxOfTriplet();
             }
-            Console.WriteLine($"Максимальное значение суммы числел, взятых по одному из каждой тройки: {result}");
+            Console.WriteLine($"Максимальное значение суммы чисел, взятых по одному из каждой тройки: {result}");
+            Console.WriteLine($"Результат делится на три: {(result%3==0?"Да":"Нет")}");
         }
 
         private static int MaxOfTriplet()
