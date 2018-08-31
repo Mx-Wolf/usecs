@@ -20,16 +20,20 @@ namespace _2018_10_01_b
 
         private static int MaxOfTriplet()
         {
-            var line = Console.ReadLine();
-            if(line==null) throw new InvalidOperationException();
+            var line = ReadNextNonEmptyLine();
             return line.Split(' ').Select(int.Parse).Max();
         }
 
         private static int ReadTripletCount()
         {
-            var line = Console.ReadLine();
-            if (line == null) throw new InvalidOperationException();
+            var line = ReadNextNonEmptyLine();
             return int.Parse(line);
+        }
+
+        private static string ReadNextNonEmptyLine()
+        {
+            var line = Console.ReadLine();
+            return line ?? throw new InvalidOperationException();
         }
     }
 }
