@@ -32,7 +32,7 @@ namespace _2018_10_01_b
                 }
                 else
                 {
-                    Debug.WriteLine("Получить значение ");
+                    Debug.WriteLine("Получить значение не представляется возможным");
                     Console.WriteLine(0);
                 }
             }
